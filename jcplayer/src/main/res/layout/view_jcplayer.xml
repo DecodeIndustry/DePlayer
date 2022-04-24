@@ -5,7 +5,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="com.example.jean.jcplayer.view.JcPlayerView">
+    tools:context="com.example.decode.deplayer.view.JcPlayerView">
 
     <TextView
         android:id="@+id/txtCurrentMusic"
