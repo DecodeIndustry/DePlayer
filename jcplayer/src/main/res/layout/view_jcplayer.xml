@@ -122,7 +122,7 @@
             android:layout_height="5dp"
             android:background="@null"
             android:visibility="gone"
-            android:layout_gravity="center"
+            android:layout_gravity="bottom"
             app:srcCompat="@drawable/ic_fiber_manual_record"
             tools:ignore="ContentDescription" />
 
