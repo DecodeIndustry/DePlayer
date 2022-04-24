@@ -93,10 +93,6 @@
         app:layout_goneMarginEnd="@dimen/spacing_normal"
         android:layout_margin="@dimen/spacing_normal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/btnRandom"
@@ -107,26 +103,31 @@
                 android:contentDescription="@string/description_shuffle_button"
                 app:srcCompat="@drawable/ic_shuffle" />
 
-            <ImageButton
-                android:id="@+id/btnRandomIndicator"
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:layout_marginTop="@dimen/spacing_small"
-                android:layout_marginBottom="2dp"
-                android:background="@null"
-                android:visibility="gone"
-                android:layout_gravity="center"
-                app:layout_constraintBottom_toBottomOf="@id/view_stub"
-                app:layout_constraintEnd_toStartOf="@id/view_stub"
-                app:layout_constraintStart_toEndOf="@id/btnPrevCard"
-                app:srcCompat="@drawable/ic_fiber_manual_record"
-                tools:ignore="ContentDescription" />
-
-        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
 
 
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:neumorph_shadowElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/view_stub"
+        app:layout_constraintEnd_toStartOf="@id/view_stub"
+        app:layout_constraintStart_toEndOf="@id/btnPrevCard"
+        app:layout_constraintTop_toTopOf="@id/btnPrevCard"
+        android:layout_marginTop="8dp">
+
+        <ImageButton
+            android:id="@+id/btnRandomIndicator"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@null"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_fiber_manual_record"
+            tools:ignore="ContentDescription" />
 
     </soup.neumorphism.NeumorphCardView>
+
 
 
 
@@ -275,8 +276,6 @@
             android:layout_gravity="center"
             android:background="@null"
             android:contentDescription="@string/description_next_button"
-            android:scaleType="fitXY"
-
             app:srcCompat="@drawable/ic_next" />
 
     </soup.neumorphism.NeumorphCardView>
