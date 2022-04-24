@@ -106,29 +106,20 @@
     </soup.neumorphism.NeumorphCardView>
 
 
-    <soup.neumorphism.NeumorphCardView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:neumorph_shadowElevation="4dp"
+
+    <ImageButton
+        android:id="@+id/btnRandomIndicator"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginBottom="2dp"
+        android:background="@null"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@id/view_stub"
         app:layout_constraintEnd_toStartOf="@id/view_stub"
         app:layout_constraintStart_toEndOf="@id/btnPrevCard"
-        app:layout_constraintTop_toTopOf="@id/btnPrevCard"
-        android:layout_marginTop="8dp">
-
-        <ImageButton
-            android:id="@+id/btnRandomIndicator"
-            android:layout_width="5dp"
-            android:layout_height="5dp"
-            android:background="@null"
-            android:visibility="gone"
-            android:layout_gravity="bottom"
-            app:srcCompat="@drawable/ic_fiber_manual_record"
-            tools:ignore="ContentDescription" />
-
-    </soup.neumorphism.NeumorphCardView>
-
-
+        app:srcCompat="@drawable/ic_fiber_manual_record"
+        tools:ignore="ContentDescription" />
 
 
     <View
