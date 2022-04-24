@@ -150,16 +150,36 @@
         android:layout_marginTop="@dimen/spacing_normal"
         android:layout_marginBottom="@dimen/spacing_large">
 
-        <ImageButton
-            android:id="@+id/btnPlay"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:background="@null"
-            android:contentDescription="@string/description_play_button"
-            android:scaleType="fitXY"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-            app:srcCompat="@drawable/ic_play" />
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:contentDescription="@string/description_play_button"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_play" />
+
+            <ImageButton
+                android:id="@+id/btnPause"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:contentDescription="@string/description_play_button"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_pause" />
+
+        </LinearLayout>
+
+
 
     </soup.neumorphism.NeumorphCardView>
 
@@ -218,19 +238,21 @@
         app:srcCompat="@drawable/ic_repeat_one"
         tools:ignore="ContentDescription" />
 
-    <ImageButton
-        android:id="@+id/btnPause"
-        android:layout_width="@dimen/touch_default"
-        android:layout_height="@dimen/touch_default"
-        android:layout_marginBottom="@dimen/spacing_large"
-        android:background="@null"
-        android:contentDescription="@string/description_play_button"
-        android:scaleType="fitXY"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btnNextCard"
-        app:layout_constraintStart_toEndOf="@id/btnPrevCard"
-        app:srcCompat="@drawable/ic_pause" />
+<!--    <soup.neumorphism.NeumorphCardView-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        app:neumorph_shadowElevation="4dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/btnNextCard"-->
+<!--        app:layout_constraintStart_toEndOf="@id/btnPrevCard"-->
+<!--        android:layout_marginTop="@dimen/spacing_normal"-->
+<!--        android:layout_marginBottom="@dimen/spacing_large">-->
+
+
+
+<!--    </soup.neumorphism.NeumorphCardView>-->
+
+
 
 
     <soup.neumorphism.NeumorphCardView
