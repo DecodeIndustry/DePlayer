@@ -229,8 +229,12 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:background="@null"
-                android:visibility="visible"
                 android:contentDescription="@string/description_repeat_button"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_repeat" />
 
             <ImageButton
