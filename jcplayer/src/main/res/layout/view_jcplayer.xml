@@ -85,13 +85,14 @@
         android:id="@+id/btnRandomCard"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:neumorph_shadowElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@id/btnPrevCard"
+        android:layout_margin="@dimen/spacing_normal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/view_stub"
-        app:layout_constraintStart_toEndOf="@id/btnPrevCard"
-        app:layout_constraintTop_toTopOf="@id/btnPrevCard"
+        app:layout_constraintStart_toEndOf="@+id/btnPrevCard"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
         app:layout_goneMarginEnd="@dimen/spacing_normal"
-        android:layout_margin="@dimen/spacing_normal">
+        app:neumorph_shadowElevation="4dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -127,7 +128,6 @@
         </android.support.constraint.ConstraintLayout>
 
 
-
     </soup.neumorphism.NeumorphCardView>
 
 
@@ -145,21 +145,19 @@
         app:layout_constraintTop_toTopOf="@id/btnPrevCard" />
 
     <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        app:neumorph_shadowElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@id/view_stub"
-        app:layout_constraintEnd_toStartOf="@id/btnNextCard"
-        app:layout_constraintStart_toEndOf="@id/btnPrevCard"
-        app:layout_constraintTop_toTopOf="@id/view_stub"
-        android:layout_marginTop="@dimen/spacing_normal"
-        android:layout_marginBottom="@dimen/spacing_large">
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/btnRandomCard"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:neumorph_shadowElevation="4dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/btnPlay"
@@ -206,21 +204,20 @@
         </android.support.constraint.ConstraintLayout>
 
 
-
     </soup.neumorphism.NeumorphCardView>
-
 
 
     <soup.neumorphism.NeumorphCardView
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:neumorph_shadowElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@id/btnNextCard"
-        app:layout_constraintEnd_toStartOf="@id/btnNextCard"
-        app:layout_constraintStart_toEndOf="@id/view_stub"
-        app:layout_constraintTop_toTopOf="@id/btnNextCard"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNextCard"
+        app:layout_constraintStart_toEndOf="@+id/neumorphCardView"
+        app:layout_constraintTop_toTopOf="@+id/neumorphCardView"
         app:layout_goneMarginStart="@dimen/spacing_normal"
-        android:layout_margin="@dimen/spacing_normal">
+        app:neumorph_shadowElevation="4dp">
 
         <ImageButton
             android:id="@+id/btnRepeat"
@@ -279,20 +276,17 @@
 <!--    </soup.neumorphism.NeumorphCardView>-->
 
 
-
-
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/btnNextCard"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:neumorph_shadowElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
         android:layout_marginTop="@dimen/spacing_normal"
         android:layout_marginEnd="@dimen/spacing_large"
         android:layout_marginRight="@dimen/spacing_large"
-        android:layout_marginBottom="@dimen/spacing_large">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:neumorph_shadowElevation="4dp">
 
         <ImageButton
             android:id="@+id/btnNext"
@@ -322,20 +316,18 @@
 <!--    </soup.neumorphism.NeumorphCardView>-->
 
 
-
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/btnPrevCard"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:neumorph_shadowElevation="4dp"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginTop="8dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        android:layout_marginStart="@dimen/spacing_large"
-        android:layout_marginLeft="@dimen/spacing_large"
-        android:layout_marginTop="@dimen/spacing_normal"
-        android:layout_marginBottom="@dimen/spacing_large">
+        app:neumorph_shadowElevation="4dp">
 
 
         <ImageButton
@@ -348,7 +340,6 @@
             app:srcCompat="@drawable/ic_previous" />
 
     </soup.neumorphism.NeumorphCardView>
-
 
 
 </android.support.constraint.ConstraintLayout>
