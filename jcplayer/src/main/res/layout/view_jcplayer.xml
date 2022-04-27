@@ -169,6 +169,7 @@
                 android:background="@null"
                 android:contentDescription="@string/description_play_button"
                 android:scaleType="fitXY"
+                android:visibility="gone"
                 app:srcCompat="@drawable/ic_play" />
 
             <ImageButton
@@ -188,7 +189,7 @@
                 android:layout_height="@dimen/touch_default"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:visibility="gone"/>
+                android:visibility="visible"/>
 
         </LinearLayout>
 
