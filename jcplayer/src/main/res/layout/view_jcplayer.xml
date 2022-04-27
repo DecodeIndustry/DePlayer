@@ -182,6 +182,14 @@
                 android:visibility="gone"
                 app:srcCompat="@drawable/ic_pause" />
 
+            <ProgressBar
+                android:id="@+id/progressBarPlayer"
+                android:layout_width="@dimen/touch_default"
+                android:layout_height="@dimen/touch_default"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
         </LinearLayout>
 
 
@@ -284,28 +292,21 @@
 
     </soup.neumorphism.NeumorphCardView>
 
-    <soup.neumorphism.NeumorphCardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        app:neumorph_shadowElevation="4dp"
-        app:layout_constraintBottom_toBottomOf="@id/view_stub"
-        app:layout_constraintEnd_toStartOf="@id/btnNextCard"
-        app:layout_constraintStart_toEndOf="@id/btnPrevCard"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        app:layout_constraintTop_toTopOf="@id/view_stub"
-        android:layout_marginTop="@dimen/spacing_normal"
-        android:layout_marginBottom="@dimen/spacing_large">
+<!--    <soup.neumorphism.NeumorphCardView-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        app:neumorph_shadowElevation="4dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/view_stub"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/btnNextCard"-->
+<!--        app:layout_constraintStart_toEndOf="@id/btnPrevCard"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/seekBar"-->
+<!--        app:layout_constraintTop_toTopOf="@id/view_stub"-->
+<!--        android:layout_marginTop="@dimen/spacing_normal"-->
+<!--        android:layout_marginBottom="@dimen/spacing_large">-->
 
-        <ProgressBar
-            android:id="@+id/progressBarPlayer"
-            android:layout_width="@dimen/touch_default"
-            android:layout_height="@dimen/touch_default"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:visibility="gone"
-            tools:visibility="visible" />
 
-    </soup.neumorphism.NeumorphCardView>
+
+<!--    </soup.neumorphism.NeumorphCardView>-->
 
 
 
