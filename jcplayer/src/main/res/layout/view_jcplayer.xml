@@ -155,7 +155,7 @@
         android:layout_marginTop="@dimen/spacing_normal"
         android:layout_marginBottom="@dimen/spacing_large">
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -170,17 +170,25 @@
                 android:contentDescription="@string/description_play_button"
                 android:scaleType="fitXY"
                 android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_play" />
 
             <ImageButton
                 android:id="@+id/btnPause"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:background="@null"
                 android:layout_gravity="center"
+                android:background="@null"
                 android:contentDescription="@string/description_play_button"
                 android:scaleType="fitXY"
                 android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_pause" />
 
             <ProgressBar
@@ -189,9 +197,13 @@
                 android:layout_height="@dimen/touch_default"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:visibility="visible"/>
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
 
 
 
