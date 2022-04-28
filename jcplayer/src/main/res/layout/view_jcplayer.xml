@@ -266,9 +266,12 @@
         android:id="@+id/btnNextCard"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="@+id/neumorphCardView2"
-        app:layout_constraintStart_toEndOf="@+id/neumorphCardView2"
-        app:layout_constraintTop_toTopOf="@+id/neumorphCardView2"
+        app:layout_constraintBottom_toBottomOf="@+id/neumorphCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/neumorphCardView"
+        app:layout_constraintTop_toTopOf="@+id/view_stub"
+        app:layout_constraintVertical_bias="0.0"
         app:neumorph_shadowElevation="4dp">
 
         <ImageButton
@@ -282,15 +285,16 @@
 
     </soup.neumorphism.NeumorphCardView>
 
-
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/btnPrevCard"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/btnRandomCard"
-        app:layout_constraintEnd_toStartOf="@+id/btnRandomCard"
-        app:layout_constraintTop_toTopOf="@+id/btnRandomCard"
+        app:layout_constraintBottom_toBottomOf="@+id/neumorphCardView"
+        app:layout_constraintEnd_toStartOf="@+id/neumorphCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_stub"
+        app:layout_constraintVertical_bias="0.0"
         app:neumorph_shadowElevation="4dp">
 
 
